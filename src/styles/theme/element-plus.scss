@@ -1,0 +1,58 @@
+//重写element-plus变量/自定义主题
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #00488a
+    ),
+    'success': (
+      'base': #00a870
+    ),
+    'warning': (
+      'base': #ed7b2f
+    ),
+    'danger': (
+      'base': #e34d59
+    ),
+    'error': (
+      'base': #e34d59
+    ),
+    'info': (
+      'base': #909399
+    )
+  ),
+  $border-width: 1px,
+  $font-size: (
+    'extra-large': 24px,
+    'large': 20px,
+    'medium': 16px,
+    'base': 14px,
+    'small': 13px,
+    'extra-small': 12px
+  ),
+  $border-radius: (
+    'base': 10px,
+    'small': 4px
+  ),
+  $input: (
+    'bg-color': #e1e8f4,
+    'placeholder-color': rgba(#00071e, 0.2)
+  ),
+  $menu: (
+    'item-height': 56px,
+    'horizontal-sub-item-height': 36px,
+    'item-font-size': 16px,
+    'base-level-padding': 20px,
+    'level-padding': 20px,
+    'icon-width': 24px,
+    'bg-color': '#38509F',
+    'text-color': rgba(#ffffff, 0.7),
+    'active-color': '#FFFFFF'
+  ),
+  $header: (
+    'padding': 0 20px,
+    'height': 60px
+  )
+);
+
+// 导入所有element-plus样式:
+@use 'element-plus/theme-chalk/src/index.scss' as *;

@@ -1,0 +1,18 @@
+# 其他类型文件
+*.js
+*.ts
+*.jpg
+*.png
+*.svg
+*.md
+*.json
+*.woff
+.JW_Store
+
+# 测试和打包目录
+node_modules
+dist
+tests
+/tests/
+/dist/
+/node_modules/
